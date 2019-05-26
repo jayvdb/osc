@@ -11,7 +11,8 @@ addons:
     packages:
     - diffstat
 sudo: false
-script: cd tests; python suite.py
+install: pip install pytest
+script: pytest
 deploy:
   provider: pypi
   user: suse
